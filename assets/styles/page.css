@@ -1,0 +1,10 @@
+
+html, body {
+    background: rgba(48, 48, 48, 0.5) none repeat scroll 0 0;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    
+}

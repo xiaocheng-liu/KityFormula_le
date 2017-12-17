@@ -1,0 +1,81 @@
+
+.kf-editor {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #e9e9e9;
+    position: relative;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+    z-index: 2;
+    background-color: #fafafa;
+}
+
+.kf-editor-ui-editor-area {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    z-index: 1;
+    background-color: white;
+}
+
+.kf-editor-ui-canvas {
+    width: 59%;
+    border-right: 1px solid #dcdee0;
+}
+
+.fui-panel-content {
+    overflow: hidden;
+}
+
+.kf-editor-ui-latex-area {
+    width: 36%;
+    height: 96%;
+    padding: 2%;
+}
+
+.kf-editor-latex-input {
+    border: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    resize: none;
+    color: #555555;
+}
+
+.kf-editor-input-box {
+    position: fixed;
+    top: 0;
+    left: -99999999px;
+    z-index: 999999;
+}
+
+.kfe-ui-tabs {
+    padding: 10px;
+}
+
+.kfe-ui-tabs-btn {
+    padding: 5px 10px;
+    margin: 10px 5px 10px 0;
+    background: #dcdee0;
+    border: 1px solid #d1d1d1;
+    -webkit-box-shadow: -1px 1px 2px rgba( 0, 0, 0, 0.2 );
+}
+
+.kfe-ui-tabs .fui-selected, .kfe-ui-tabs-btn:HOVER, .kfe-ui-tabs-btn:ACTIVE {
+    background: #a6aaa9!important;
+    border-color: #9fa0a0!important;
+}
+
+.kfe-ext-disabled {
+    opacity: 0.3!important;
+}
+
+.kfe-ext-disabled:HOVER {
+    border-color: #dcdee0!important;
+}

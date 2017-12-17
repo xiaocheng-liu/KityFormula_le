@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试KityFormula_le</title>
+    <link rel="stylesheet" href="css/base.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="css/question-answer.min.css">
+    <link rel="stylesheet" href="css/jquery-ui-1.9.2.custom.css">
+    <link rel="stylesheet" href="js/skins/moono/editor.css">
+    <script src="../js/jquery-1.11.1.min.js"></script>
+    <script src="../js/texzilla.js"></script>
+    <script src="js/ckeditor.js"></script>
+    <script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript">
+        // 全部变量，公式图片与xml映射
+        var xml_data = "";
+        // console.log(xml_data)
+        var FormulaImgHash = {
+            index: xml_data?xml_data.index:0, // 索引自增
+            data: xml_data?xml_data.answer_xml:{}, // 图片与xml映射内容
+            answers: null, // 主观填空类图片答案
+            getHash: function() {
+                // 获取需要的图片与答案xml映射
+                var ids = [];
+                var _filter = function(str) {
+                    var reg = /data-kfformula-index="(\d+)"/g;
+                    var m;
+                    while(m = reg.exec(str)) {
+                        ids.push(m[1]);
+                    }
+                };
+                _.each(this.answers, function(item, i) {
+                    if (typeof item === 'string') {
+                        _filter(item);
+                    }
+                    else if (item != null && _.size(item) > 0) {
+                        _.each(item, function(v, k) {
+                            if (typeof v === 'string') _filter(v);
+                        })
+                    }
+                });
+                var res = {};
+                _.each(this.data, function(v, k) {
+                    k = k.toString();
+                    if (_.indexOf(ids, k) > -1) {
+                        res[k] = v;
+                    }
+                });
+                return {answer_xml: res, index: this.index};
+            }
+        };
+
+
+
+        // 公式编辑器
+        $(function() {
+            CKEDITOR.config.customConfig = 'config-custom.js';
+            var current_editor = null;
+            $('.fill-edit').each(function() {
+                var _editor = CKEDITOR.inline(this);
+                var self = this;
+                _editor.on('change',function( evt ){
+                    var txt = _editor.getData();
+                    $(self).trigger('fillblank', txt);
+                    // alert(_editor.getData())
+                });
+                _editor.on('focus',function( evt ){
+                    if (typeof formulaShow === 'function') formulaShow();
+                    current_editor = _editor;
+                });
+            });
+
+
+            if ( document.body.addEventListener ) {
+                var $FeditorContainer = $('#formula-wrap');
+                $FeditorContainer.css('right', '-560px');
+                var formulaEditor_visible = false;
+                var url = '../index.html';
+                $FeditorContainer.find('iframe').attr({ 'src': url });
+
+                var formulaShow = function (state) {
+                    if (state === false) {
+                        formulaEditor_visible = false;
+                        $FeditorContainer.animate({'right': '-800px'}, 'slow');
+                        return false;
+                    }
+                    if (formulaEditor_visible) return false;
+                    formulaEditor_visible = true;
+                    $FeditorContainer.animate({'right': 0}, 'slow');
+                };
+
+                // formulaShow();
+                $('#J_FormulaClose').click(function() {
+                    formulaShow(false);
+                });
+
+
+                $FeditorContainer.draggable({
+                    handle: '.formula-tit',
+                    axis: "y",
+                    containment: 'window'
+                });
+
+                window.formulaReady = function(feditor) {
+                    $('#J_FormulaOk').click(function() {
+                        feditor.execCommand('get.image.data', function(data) {
+                            var latex = feditor.execCommand('get.source');
+                            var mathml = TeXZilla.toMathMLString(latex,false,false,true);
+                            // var html = '<img class="kfformula" src="'+ data.img +'" data-mathexpression="' + encodeURI(mathml) + '" />';
+                            var html = '<img class="kfformula" data-kfformula-index="' + FormulaImgHash.index + '" src="'+ data.img +'" />';
+                            FormulaImgHash.data[FormulaImgHash.index] = mathml; // 全部变量，公式图片与xml映射
+                            FormulaImgHash.index += 1;
+                            if (current_editor) current_editor.insertHtml(html);
+                        });
+                    });
+
+                }
+            }
+        });
+    </script>
+
+
+
+</head>
+<body>
+<div id="formula-wrap" style="width: 560px; height: 420px;right:0px;">
+    <div class="formula-tit">公式编辑器</div>
+    <div class="formula-iframe">
+        <iframe src="" frameborder="0" width="100%" height="320"></iframe>
+    </div>
+    <button type="button" class="close" id="J_FormulaClose">关 闭</button>
+    <button type="button" class="submit" id="J_FormulaOk">确 定</button>
+</div>
+<div class="q-res">
+
+    <div class="line-field">
+        <span>【第1空】</span><div class="edit-wrap"><div contenteditable="true" class="fill-edit edit-line  cke_editable cke_editable_inline cke_contents_ltr" tabindex="0" spellcheck="false" role="textbox" aria-label="所见即所得编辑器, editor11" title="所见即所得编辑器, editor11"><br></div></div>
+    </div>
+
+</div>
+</body>
+</html>

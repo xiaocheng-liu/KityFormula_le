@@ -1,0 +1,669 @@
+.kfe-ui-block1 .fui-button, .kfe-ui-block2 .fui-button , .kfe-ui-block3 .fui-button, .kfe-ui-block4 .fui-button, .kfe-ui-block5 .fui-button, .kfe-ui-block6 .fui-button, .kfe-ui-block7 .fui-button, .kfe-ui-block8 .fui-button, .kfe-ui-block9 .fui-button, .kfe-ui-block10 .fui-button, .kfe-ui-block11 .fui-button, .kfe-ui-block12 .fui-button{
+    opacity: .5;
+}
+.kfe-ui-block1 .fui-button:hover, .kfe-ui-block2 .fui-button:hover, .kfe-ui-block3 .fui-button:hover, .kfe-ui-block4 .fui-button:hover, .kfe-ui-block5 .fui-button:hover, .kfe-ui-block6 .fui-button:hover, .kfe-ui-block7 .fui-button:hover, .kfe-ui-block8 .fui-button:hover, .kfe-ui-block9 .fui-button:hover, .kfe-ui-block10 .fui-button:hover, .kfe-ui-block11 .fui-button:hover, .kfe-ui-block12 .fui-button:hover{
+    opacity: 1;
+    border: 1px solid #599d41;
+}
+
+.kfe-ui-tabs-btn{
+    margin-right: 0;
+}
+/*-------------- block1 ------------------*/
+.kfe-ui-block1 {
+    padding: 5px;
+    width: 170px;
+    height: 84px;
+}
+
+.kfe-ui-block1 .fui-button {
+    width: 30px;
+    height: 30px;
+    margin: 1px;
+    border: 1px solid #dcdee0;
+}
+
+.kfe-ui-b1-btn-1 {
+    background: url("images/icons_02.png") no-repeat 0px 0px;
+    background-position: 0 0;
+}
+
+.kfe-ui-b1-btn-2 {
+    background: url("images/icons_02.png") no-repeat -30px 0;
+}
+
+.kfe-ui-b1-btn-3 {
+    background: url("images/icons_02.png") no-repeat -60px 0px;
+}
+
+.kfe-ui-b1-btn-4 {
+    background: url("images/icons_02.png") no-repeat -90px 0px;
+}
+
+.kfe-ui-b1-btn-5 {
+    background: url("images/icons_02.png") no-repeat -120px 0px;
+}
+
+.kfe-ui-b1-btn-6 {
+    background: url("images/icons_02.png") no-repeat -150px 0px;
+}
+
+.kfe-ui-b1-btn-7 {
+    background: url("images/icons_02.png") no-repeat -180px 0px;
+}
+
+.kfe-ui-b1-btn-8 {
+    background: url("images/icons_02.png") no-repeat -210px 0px;
+}
+
+.kfe-ui-b1-btn-9 {
+    background: url("images/icons_02.png") no-repeat -240px 0px;
+}
+
+.kfe-ui-b1-btn-10 {
+    background: url("images/icons_02.png") no-repeat -270px 0px;
+}
+
+/*------------ block 2 ----------------*/
+
+.kfe-ui-block2 {
+    padding: 5px;
+    width: 140px;
+    height: 84px;
+}
+
+.kfe-ui-block2 .fui-button {
+    width: 24px;
+    height: 24px;
+    margin: 1px;
+    border: 1px solid #dcdee0;
+}
+
+.kfe-ui-b2-btn-1 {
+    background: url("images/icons_02.png") no-repeat 0px -30px;
+}
+
+.kfe-ui-b2-btn-2 {
+    background: url("images/icons_02.png") no-repeat -24px -30px;
+}
+
+.kfe-ui-b2-btn-3 {
+    background: url("images/icons_02.png") no-repeat -48px -30px;
+}
+
+.kfe-ui-b2-btn-4 {
+    background: url("images/icons_02.png") no-repeat -72px -30px;
+}
+
+.kfe-ui-b2-btn-5 {
+    background: url("images/icons_02.png") no-repeat -96px -30px;
+}
+
+.kfe-ui-b2-btn-6 {
+    background: url("images/icons_02.png") no-repeat -120px -30px;
+}
+
+.kfe-ui-b2-btn-7 {
+    background: url("images/icons_02.png") no-repeat -144px -30px;
+}
+
+.kfe-ui-b2-btn-8 {
+    background: url("images/icons_02.png") no-repeat -168px -30px;
+}
+
+.kfe-ui-b2-btn-9 {
+    background: url("images/icons_02.png") no-repeat -192px -30px;
+}
+
+.kfe-ui-b2-btn-10 {
+    background: url("images/icons_02.png") no-repeat -216px -30px;
+}
+
+.kfe-ui-b2-btn-11 {
+    background: url("images/icons_02.png") no-repeat 0px -54px;
+}
+
+.kfe-ui-b2-btn-12 {
+    background: url("images/icons_02.png") no-repeat -24px -54px;
+}
+
+.kfe-ui-b2-btn-13 {
+    background: url("images/icons_02.png") no-repeat -48px -54px;
+}
+
+.kfe-ui-b2-btn-14 {
+    background: url("images/icons_02.png") no-repeat -72px -54px;
+}
+
+.kfe-ui-b2-btn-15 {
+    background: url("images/icons_02.png") no-repeat -96px -54px;
+}
+
+/*------------ block 3 ----------------*/
+
+.kfe-ui-block3 {
+    padding: 5px;
+    width: 84px;
+    height: 84px;
+}
+
+.kfe-ui-block3 .fui-button {
+    width: 24px;
+    height: 24px;
+    margin: 1px;
+    border: 1px solid #dcdee0;
+}
+
+.kfe-ui-b3-btn-1 {
+    background: url("images/icons_02.png") no-repeat -120px -54px;
+}
+
+.kfe-ui-b3-btn-2 {
+    background: url("images/icons_02.png") no-repeat -144px -54px;
+}
+
+.kfe-ui-b3-btn-3 {
+    background: url("images/icons_02.png") no-repeat -168px -54px;
+}
+
+.kfe-ui-b3-btn-4 {
+    background: url("images/icons_02.png") no-repeat -192px -54px;
+}
+
+.kfe-ui-b3-btn-5 {
+    background: url("images/icons_02.png") no-repeat -216px -54px;
+}
+
+.kfe-ui-b3-btn-6 {
+    background: url("images/icons_02.png") no-repeat 0px -78px;
+}
+
+.kfe-ui-b3-btn-7 {
+    background: url("images/icons_02.png") no-repeat -24px -78px;
+}
+
+.kfe-ui-b3-btn-8 {
+    background: url("images/icons_02.png") no-repeat -48px -78px;
+}
+
+.kfe-ui-b3-btn-9 {
+    background: url("images/icons_02.png") no-repeat -72px -78px;
+}
+
+/*------------ block 4 ----------------*/
+
+.kfe-ui-block4 {
+    padding: 5px;
+    width: 112px;
+    height: 84px;
+}
+
+.kfe-ui-block4 .fui-button {
+    width: 24px;
+    height: 24px;
+    margin: 1px;
+    border: 1px solid #dcdee0;
+}
+
+.kfe-ui-b4-btn-1 {
+    background: url("images/icons_02.png") no-repeat -96px -78px;
+}
+
+.kfe-ui-b4-btn-2 {
+    background: url("images/icons_02.png") no-repeat -120px -78px;
+}
+
+.kfe-ui-b4-btn-3 {
+    background: url("images/icons_02.png") no-repeat -144px -78px;
+}
+
+.kfe-ui-b4-btn-4 {
+    background: url("images/icons_02.png") no-repeat -168px -78px;
+}
+
+.kfe-ui-b4-btn-5 {
+    background: url("images/icons_02.png") no-repeat -192px -78px;
+}
+
+.kfe-ui-b4-btn-6 {
+    background: url("images/icons_02.png") no-repeat -216px -78px;
+}
+
+.kfe-ui-b4-btn-7 {
+    background: url("images/icons_02.png") no-repeat 0px -102px;
+}
+
+.kfe-ui-b4-btn-8 {
+    background: url("images/icons_02.png") no-repeat -24px -102px;
+}
+
+.kfe-ui-b4-btn-9 {
+    background: url("images/icons_02.png") no-repeat -48px -102px;
+}
+
+.kfe-ui-b4-btn-10 {
+    background: url("images/icons_02.png") no-repeat -72px -102px;
+}
+
+.kfe-ui-b4-btn-11 {
+    background: url("images/icons_02.png") no-repeat -96px -102px;
+}
+
+.kfe-ui-b4-btn-12 {
+    background: url("images/icons_02.png") no-repeat -120px -102px;
+}
+
+/*------------ block 6 ----------------*/
+
+.kfe-ui-block6 .fui-button {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border: 1px solid #dcdee0;
+}
+
+.kfe-ui-b6-btn-1 {
+    background: url("images/icons_02.png") no-repeat 0px -126px;
+}
+
+.kfe-ui-b6-btn-2 {
+    background: url("images/icons_02.png") no-repeat -24px -126px;
+}
+
+.kfe-ui-b6-btn-3 {
+    background: url("images/icons_02.png") no-repeat -48px -126px;
+}
+
+.kfe-ui-b6-btn-4 {
+    background: url("images/icons_02.png") no-repeat -72px -126px;
+}
+
+.kfe-ui-b6-btn-5 {
+    background: url("images/icons_02.png") no-repeat -96px -126px;
+}
+
+.kfe-ui-b6-btn-6 {
+    background: url("images/icons_02.png") no-repeat -120px -126px;
+}
+
+.kfe-ui-b6-btn-7 {
+    background: url("images/icons_02.png") no-repeat -144px -126px;
+}
+
+.kfe-ui-b6-btn-8 {
+    background: url("images/icons_02.png") no-repeat -168px -126px;
+}
+
+.kfe-ui-b6-btn-9 {
+    background: url("images/icons_02.png") no-repeat -192px -126px;
+}
+
+.kfe-ui-b6-btn-10 {
+    background: url("images/icons_02.png") no-repeat 0px -150px;
+}
+
+.kfe-ui-b6-btn-11 {
+    background: url("images/icons_02.png") no-repeat -24px -150px;
+}
+
+.kfe-ui-b6-btn-12 {
+    background: url("images/icons_02.png") no-repeat -48px -150px;
+}
+
+.kfe-ui-b6-btn-13 {
+    background: url("images/icons_02.png") no-repeat -72px -150px;
+}
+
+.kfe-ui-b6-btn-14 {
+    background: url("images/icons_02.png") no-repeat -96px -150px;
+}
+
+.kfe-ui-b6-btn-15 {
+    background: url("images/icons_02.png") no-repeat -120px -150px;
+}
+
+.kfe-ui-b6-btn-16 {
+    background: url("images/icons_02.png") no-repeat -144px -150px;
+}
+
+.kfe-ui-b6-btn-17 {
+    background: url("images/icons_02.png") no-repeat -168px -150px;
+}
+
+/*------------ block 7 ----------------*/
+
+.kfe-ui-block7 .fui-button {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border: 1px solid #dcdee0;
+}
+
+.kfe-ui-b7-btn-1 {
+    background: url("images/icons_02.png") no-repeat 0px -174px;
+}
+
+.kfe-ui-b7-btn-2 {
+    background: url("images/icons_02.png") no-repeat -24px -174px;
+}
+
+.kfe-ui-b7-btn-3 {
+    background: url("images/icons_02.png") no-repeat -48px -174px;
+}
+
+.kfe-ui-b7-btn-4 {
+    background: url("images/icons_02.png") no-repeat -72px -174px;
+}
+
+.kfe-ui-b7-btn-5 {
+    background: url("images/icons_02.png") no-repeat -96px -174px;
+}
+
+.kfe-ui-b7-btn-6 {
+    background: url("images/icons_02.png") no-repeat -120px -174px;
+}
+
+.kfe-ui-b7-btn-7 {
+    background: url("images/icons_02.png") no-repeat -144px -174px;
+}
+
+.kfe-ui-b7-btn-8 {
+    background: url("images/icons_02.png") no-repeat -168px -174px;
+}
+
+.kfe-ui-b7-btn-9 {
+    background: url("images/icons_02.png") no-repeat -192px -174px;
+}
+
+.kfe-ui-b7-btn-10 {
+    background: url("images/icons_02.png") no-repeat -216px -174px;
+}
+
+.kfe-ui-b7-btn-11 {
+    background: url("images/icons_02.png") no-repeat 0px -198px;
+}
+
+.kfe-ui-b7-btn-12 {
+    background: url("images/icons_02.png") no-repeat -24px -198px;
+}
+
+.kfe-ui-b7-btn-13 {
+    background: url("images/icons_02.png") no-repeat -48px -198px;
+}
+
+.kfe-ui-b7-btn-14 {
+    background: url("images/icons_02.png") no-repeat -72px -198px;
+}
+
+.kfe-ui-b7-btn-15 {
+    background: url("images/icons_02.png") no-repeat -96px -198px;
+}
+
+.kfe-ui-b7-btn-16 {
+    background: url("images/icons_02.png") no-repeat -120px -198px;
+}
+
+.kfe-ui-b7-btn-17 {
+    background: url("images/icons_02.png") no-repeat -144px -198px;
+}
+
+/*------------ block 8 ----------------*/
+
+.kfe-ui-block8 .fui-button {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border: 1px solid #dcdee0;
+}
+
+.kfe-ui-b8-btn-1 {
+    background: url("images/icons_02.png") no-repeat 0px -222px;
+}
+
+.kfe-ui-b8-btn-2 {
+    background: url("images/icons_02.png") no-repeat -24px -222px;
+}
+
+.kfe-ui-b8-btn-3 {
+    background: url("images/icons_02.png") no-repeat -48px -222px;
+}
+
+.kfe-ui-b8-btn-4 {
+    background: url("images/icons_02.png") no-repeat -72px -222px;
+}
+
+.kfe-ui-b8-btn-5 {
+    background: url("images/icons_02.png") no-repeat -96px -222px;
+}
+
+.kfe-ui-b8-btn-6 {
+    background: url("images/icons_02.png") no-repeat -120px -222px;
+}
+
+.kfe-ui-b8-btn-7 {
+    background: url("images/icons_02.png") no-repeat -144px -222px;
+}
+
+.kfe-ui-b8-btn-8 {
+    background: url("images/icons_02.png") no-repeat -168px -222px;
+}
+
+/*------------ block 9 ----------------*/
+
+.kfe-ui-block9 .fui-button {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border: 1px solid #dcdee0;
+}
+
+.kfe-ui-b9-btn-1 {
+    background: url("images/icons_02.png") no-repeat 0px -246px;
+}
+
+.kfe-ui-b9-btn-2 {
+    background: url("images/icons_02.png") no-repeat -24px -246px;
+}
+
+.kfe-ui-b9-btn-3 {
+    background: url("images/icons_02.png") no-repeat -48px -246px;
+}
+
+.kfe-ui-b9-btn-4 {
+    background: url("images/icons_02.png") no-repeat -72px -246px;
+}
+
+.kfe-ui-b9-btn-5 {
+    background: url("images/icons_02.png") no-repeat -96px -246px;
+}
+
+.kfe-ui-b9-btn-6 {
+    background: url("images/icons_02.png") no-repeat -120px -246px;
+}
+
+.kfe-ui-b9-btn-7 {
+    background: url("images/icons_02.png") no-repeat -144px -246px;
+}
+
+.kfe-ui-b9-btn-8 {
+    background: url("images/icons_02.png") no-repeat -168px -246px;
+}
+
+.kfe-ui-b9-btn-9 {
+    background: url("images/icons_02.png") no-repeat -192px -246px;
+}
+
+.kfe-ui-b9-btn-10 {
+    background: url("images/icons_02.png") no-repeat -216px -246px;
+}
+
+.kfe-ui-b9-btn-11 {
+    background: url("images/icons_02.png") no-repeat 0px -270px;
+}
+
+.kfe-ui-b9-btn-12 {
+    background: url("images/icons_02.png") no-repeat -24px -270px;
+}
+
+/*------------ block 10 ----------------*/
+
+.kfe-ui-block10 .fui-button {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border: 1px solid #dcdee0;
+}
+
+.kfe-ui-b10-btn-1 {
+    background: url("images/icons_02.png") no-repeat 0px -294px;
+}
+
+.kfe-ui-b10-btn-2 {
+    background: url("images/icons_02.png") no-repeat -24px -294px;
+}
+
+.kfe-ui-b10-btn-3 {
+    background: url("images/icons_02.png") no-repeat -48px -294px;
+}
+
+.kfe-ui-b10-btn-4 {
+    background: url("images/icons_02.png") no-repeat -72px -294px;
+}
+
+.kfe-ui-b10-btn-5 {
+    background: url("images/icons_02.png") no-repeat -96px -294px;
+}
+
+.kfe-ui-b10-btn-6 {
+    background: url("images/icons_02.png") no-repeat -120px -294px;
+}
+
+.kfe-ui-b10-btn-7 {
+    background: url("images/icons_02.png") no-repeat -144px -294px;
+}
+
+.kfe-ui-b10-btn-8 {
+    background: url("images/icons_02.png") no-repeat -168px -294px;
+}
+
+.kfe-ui-b10-btn-9 {
+    background: url("images/icons_02.png") no-repeat -192px -294px;
+}
+
+/*------------ block 11 ----------------*/
+
+.kfe-ui-block11 .fui-button {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border: 1px solid #dcdee0;
+}
+
+.kfe-ui-b11-btn-1 {
+    background: url("images/icons_02.png") no-repeat 0px -318px;
+}
+
+.kfe-ui-b11-btn-2 {
+    background: url("images/icons_02.png") no-repeat -24px -318px;
+}
+
+.kfe-ui-b11-btn-3 {
+    background: url("images/icons_02.png") no-repeat -48px -318px;
+}
+
+.kfe-ui-b11-btn-4 {
+    background: url("images/icons_02.png") no-repeat -72px -318px;
+}
+
+.kfe-ui-b11-btn-5 {
+    background: url("images/icons_02.png") no-repeat -96px -318px;
+}
+
+.kfe-ui-b11-btn-6 {
+    background: url("images/icons_02.png") no-repeat -120px -318px;
+}
+
+.kfe-ui-b11-btn-7 {
+    background: url("images/icons_02.png") no-repeat -144px -318px;
+}
+
+.kfe-ui-b11-btn-8 {
+    background: url("images/icons_02.png") no-repeat -168px -318px;
+}
+
+.kfe-ui-b11-btn-9 {
+    background: url("images/icons_02.png") no-repeat -192px -318px;
+}
+
+.kfe-ui-b11-btn-10 {
+    background: url("images/icons_02.png") no-repeat -216px -318px;
+}
+
+.kfe-ui-b11-btn-11 {
+    background: url("images/icons_02.png") no-repeat 0px -342px;
+}
+
+.kfe-ui-b11-btn-12 {
+    background: url("images/icons_02.png") no-repeat -24px -342px;
+}
+
+.kfe-ui-b11-btn-13 {
+    background: url("images/icons_02.png") no-repeat -48px -342px;
+}
+
+.kfe-ui-b11-btn-14 {
+    background: url("images/icons_02.png") no-repeat -72px -342px;
+}
+
+.kfe-ui-b11-btn-15 {
+    background: url("images/icons_02.png") no-repeat -96px -342px;
+}
+
+.kfe-ui-b11-btn-16 {
+    background: url("images/icons_02.png") no-repeat -120px -342px;
+}
+
+.kfe-ui-b11-btn-17 {
+    background: url("images/icons_02.png") no-repeat -144px -342px;
+}
+
+.kfe-ui-b11-btn-18 {
+    background: url("images/icons_02.png") no-repeat -168px -342px;
+}
+
+/*------------ block 12 ----------------*/
+
+.kfe-ui-block12 .fui-button {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    border: 1px solid #dcdee0;
+}
+
+.kfe-ui-b12-btn-1 {
+    background: url("images/icons_02.png") no-repeat 0px -366px;
+}
+
+.kfe-ui-b12-btn-2 {
+    background: url("images/icons_02.png") no-repeat -24px -366px;
+}
+
+.kfe-ui-b12-btn-3 {
+    background: url("images/icons_02.png") no-repeat -48px -366px;
+}
+
+.kfe-ui-b12-btn-4 {
+    background: url("images/icons_02.png") no-repeat -72px -366px;
+}
+
+.kfe-ui-b12-btn-5 {
+    background: url("images/icons_02.png") no-repeat -96px -366px;
+}
+
+.kfe-ui-b12-btn-6 {
+    background: url("images/icons_02.png") no-repeat -120px -366px;
+}
+
+.kfe-ui-b12-btn-7 {
+    background: url("images/icons_02.png") no-repeat -144px -366px;
+}

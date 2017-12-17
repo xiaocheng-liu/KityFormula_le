@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>KityFormula</title>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <link rel="stylesheet" href="./assets/styles/page.css">
+    <link rel="stylesheet" href="./assets/styles/base.css">
+    <link rel="stylesheet" href="./assets/theme/fui/fui.min.css">
+    <link rel="stylesheet" href="./assets/theme/fui/fui.ext.css">
+    <style>
+        html, body { background: #fff; }
+        .kf-editor { background: #fff}
+        .kf-editor-ui-latex-area { display: none; }
+        .kf-editor-ui-canvas { width: 100%; }
+        .kf-editor > .fui-container:first-child { background: #efefef; }
+    </style>
+    <script>
+        SVGElement.prototype.getTransformToElement = SVGElement.prototype.getTransformToElement || function(toElement) {
+                return toElement.getScreenCTM().inverse().multiply(this.getScreenCTM());
+            };
+    </script>
+    <script src="./js/ui.conf.js"></script>
+    <script src="./js/jquery-1.11.1.min.js"></script>
+    <script src="./js/jhtmls.min.js"></script>
+    <script src="./js/fui.all.js"></script>
+    <script src="./js/kitygraph.all.min.js"></script>
+    <script src="./js/kity-formula-render.all.js"></script>
+    <script src="./js/kity-formula-parser.all.js"></script>
+    <script src="./js/kityformula-editor.all.js"></script>
+    <script src="./js/texzilla.js"></script>
+    <script>
+        // if (typeof kf === 'undefined') {
+        //     // alert(1);
+        //     jQuery( function ($) {
+        //         $('#data_submit').click(function() {
+        //             top.vm.user_the_math();
+        //         });
+        //         $('#iframe_close').click(function() {
+        //             top.vm.user_the_math();
+        //         });
+        //     });
+        // }
+        // else {
+        //     jQuery( function ($) {
+        //         $( "#tips").html('<div id="loading"><img src="loading.gif" alt="loading" /><p>正在加载，请耐心等待...</p></div>' );
+        //         var factory = kf.EditorFactory.create( $( "#eidotr" )[ 0 ], {
+        //                 render: {
+        //                     fontsize: 14
+        //                 },
+        //                 resource: {
+        //                     path: "./resource/"
+        //                 }
+        //             });
+        //         factory.ready( function () {
+        //             $( "#tips").remove();
+        //             imgLatex = '';
+        //             this.execCommand( "render", imgLatex || "\\placeholder" );
+        //             this.execCommand( "focus" );
+        //             window.kfEditor = this;
+        //         });
+        //         $('#data_submit').click(function(){
+        //             getSource(false);
+        //         });
+        //         $('#iframe_close').click(function(){
+        //             top.vm.user_the_math();
+        //         });
+        //     } );
+        // }
+
+        // function getSource(is_close){
+        //     kfEditor.execCommand('get.image.data', function(data){
+        //         var latex = kfEditor.execCommand('get.source');
+        //         var mathml = TeXZilla.toMathMLString(latex, false, false, true);
+        //         var html = '<img class="kfformula" src="'+ data.img +'" data-mathexpression="' + encodeURI(mathml) + '" />';
+        //         top.current_input.insertHtml(html);
+        //         // console.log(html);
+        //         //var mathElement = top.CKEDITOR.dom.element.createFromHtml(mathml,top.current_input.document);
+        //         //top.current_input.insertHtml('&nbsp;&nbsp;&nbsp;&nbsp;');
+        //         //top.current_input.insertElement(mathElement);
+        //         //top.current_input.insertHtml('&nbsp;&nbsp;&nbsp;&nbsp;');
+        //         if (is_close) top.vm.user_the_math();
+        //     });
+        // }
+
+        jQuery( function ($) {
+
+            if ( document.body.addEventListener ) {
+
+                $( "#tips").html('<div id="loading"><img src="./images/loading.gif" alt="loading" /><p>正在加载，请耐心等待...</p></div>' );
+
+                var factory = kf.EditorFactory.create( $( "#kfEditorContainer" )[ 0 ], {
+                    render: {
+                        fontsize: 14
+                    },
+                    resource: {
+                        path: "resource/"
+                    }
+                } );
+
+                factory.ready( function ( KFEditor ) {
+
+                    $( "#tips").remove();
+
+                    // this指向KFEditor
+
+                    this.execCommand( "render", "\\placeholder" );
+                    this.execCommand( "focus" );
+
+                    parent.formulaReady( KFEditor );
+
+                } );
+
+            } else {
+                $( "#tips").css( "color", "black" );
+                $( "#tips").css( "padding", "10px" );
+            }
+
+        } );
+    </script>
+</head>
+
+<body>
+<div id="kfEditorContainer" class="kf-editor" style="width: 100%;">
+    <div id="tips" class="tips">
+        公式编辑仅支持IE9及以上版本的浏览器，正式版本将会支持低版本浏览器，谢谢您的关注！
+    </div>
+</div>
+<!--
+    <stylestyle="z-index: 100;position: absolute;bottom: 0;right: 0px;background: rgba(48, 48, 48, 0.5);width: 100%;height: 54px;overflow: hidden">
+    <button id="data_submstylestyle="border: 1px none;bottom: 5px;height: 42px;position: absolute;right: 5px;width: 88px;">确定</button >
+    <button  id="iframe_clostylestyle="border: 1px none;bottom: 5px;height: 42px;position: absolute;right: 120px;width: 88px;">关闭</button >
+</div>
+-->
+</body>
+</html>
